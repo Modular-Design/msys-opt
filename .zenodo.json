@@ -1,0 +1,19 @@
+{
+    "description": "<p>MSYS-OPT is an Extension of MSYS, which brings useful features to optimize modular systems.</p>",
+    "license": "BSD-3-Clause",
+    "title": "MSYS-OPT: The Optimisation Extension of MSYS",
+    "upload_type": "software",
+    "keywords": [
+        "modular",
+        "python",
+        "process",
+        "optimisation",
+        "msys"
+    ],
+    "creators": [
+        {
+            "name": "Willi Zschiebsch"
+        }
+    ],
+    "access_right": "open"
+}

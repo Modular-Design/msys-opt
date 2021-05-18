@@ -1,0 +1,60 @@
+site_name: MSYS
+site_url: https://msys_opt-docs.readthedocs.io/en/latest/?badge=latest
+
+theme:
+  name: material
+  palette:
+  - scheme: default
+    primary: teal
+    accent: amber
+    toggle:
+      icon: material/lightbulb-outline
+      name: Switch to light mode
+  - scheme: slate
+    primary: teal
+    accent: amber
+    toggle:
+      icon: material/lightbulb
+      name: Switch to dark mode
+  features:
+  - search.suggest
+  - search.highlight
+  icon:
+    repo: fontawesome/brands/github-alt
+  logo: img/logo.png
+  favicon: img/favicon.png
+  language: en
+
+repo_url: https://github.com/willi-z/msys_opt
+edit_uri: https://github.com/willi-z/msys_opt/tree/main/docs
+docs_dir: docs
+site_dir: build/wiki
+
+
+plugins:
+    - search
+    - mkdocstrings
+
+nav:
+    - Introduction:
+        - Home: index.md
+        - Getting Started: getting-started.md
+    - Tutorials:
+        - Creating a Report: tutorials/report.md
+        - Install an Add-On: tutorials/add-on.md
+    - Explanations:
+        - Reporting: explanations/reporting.md
+        - Recepies: explanations/recepe.md
+        - Types : explanations/types.md
+    - How-To:
+        - Write Types: how-to/type.md
+        - Write Recepes: how-to/recepe.md
+    - References:
+        - Implementing the MDD-System: references/msys_opt.md
+        - Pluginsystem: references/plugins.md
+        - Source-Code: references/source.md
+    - Development:
+          - Writing Tests: development/tests.md
+          - Writing Documentation: development/documentation.md
+    - About: about.md
+
