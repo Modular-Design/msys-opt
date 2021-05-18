@@ -5,7 +5,7 @@
 [![Documentation Status](https://readthedocs.org/projects/msys-opt-docs/badge/?version=latest)](https://msys-opt-docs.readthedocs.io/en/latest/?badge=latest)
 [![DOI](https://zenodo.org/badge/363596972.svg)](https://zenodo.org/badge/latestdoi/363596972)
 ![workflow](https://github.com/willi-z/msys-opt/actions/workflows/ci.yml/badge.svg?branch=main)
-[![codecov](https://codecov.io/gh/willi-z/msys-opt/branch/main/graph/badge.svg?token=CG4DIOZZ6C)](https://codecov.io/gh/willi-z/msys-opt)
+[![codecov](https://codecov.io/gh/willi-z/msys-opt/branch/main/graph/badge.svg?token=OOC5YKLOTE)](https://codecov.io/gh/willi-z/msys-opt)
 
 See the [Documentation](https://msys-docs.readthedocs.io/en/latest/) form more information.
 
