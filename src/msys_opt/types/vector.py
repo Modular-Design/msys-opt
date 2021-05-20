@@ -1,10 +1,11 @@
-from ..core.optimizable import StandardType
+from ..core import OptimizableType
 import numpy as np
+from ..core.generator import Limiter
 
 
-class VectorType(StandardType):
+class VectorType(OptimizableType):
     def __init__(self, default_value):
-        super().__init__(np.array([0]))
+        super().__init__(np.array([0]), Limiter())
         self.set_value(default_value)
 
     def is_same(self, value) -> bool:

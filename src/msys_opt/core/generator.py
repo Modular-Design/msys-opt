@@ -1,4 +1,4 @@
-from msys.core.serializer import SerializerInterface
+from msys.core.interfaces import SerializerInterface
 
 
 class Generator(SerializerInterface):

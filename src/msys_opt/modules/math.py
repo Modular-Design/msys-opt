@@ -1,6 +1,6 @@
 from msys.core import Module
-from ..core.optimizable import Input, Output
 from msys.core.option import Option
+from msys.core import Connectable
 from ..core.np_parser import NumericStringParser
 from ..types.vector import VectorType
 import numpy as np
@@ -24,14 +24,8 @@ class Math(Module):
                                         """,
                                 default_value="2")
 
-        def _input_generator(i: int):
-            input = Input(VectorType([0]))
-            input.metadata.name = "in" + str(i)
-            return input
-
-        super().__init__(inputs=[Input(VectorType([0])), Input(VectorType([0]))],
-                         inputs_generator=_input_generator,
-                         outputs=[Output(VectorType([0]))],
+        super().__init__(inputs=[Connectable(VectorType([0])), Connectable(VectorType([0]))],
+                         outputs=[Connectable(VectorType([0]))],
                          options=[self.__opt_expr,
                                   self.__opt_ins,
                                   ])

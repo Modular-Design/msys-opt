@@ -1,7 +1,6 @@
-from ..core import Module
-from ..core.optimizable import Input, Output
+from msys.core import Module,Connectable, Type
 
 
 class SQL(Module):
     def __init__(self):
-        super().__init__(inputs=[Input(), Input()], outputs=[Output()])
+        super().__init__(inputs=[], outputs=[])

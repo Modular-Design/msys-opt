@@ -1,5 +1,6 @@
 import pytest
-from msys.core.connection import StandardType, TypeInterface
+from msys_opt.core import OptimizableType
+from msys.core import Type
 
 
 @pytest.mark.core
@@ -14,7 +15,7 @@ from msys.core.connection import StandardType, TypeInterface
     ],
 )
 def test_create(value):
-    t = StandardType(value)
+    t = Type(value)
     assert t.get_value() == value
 
 
@@ -23,12 +24,12 @@ def test_create(value):
 @pytest.mark.parametrize(
     "obj, correct",
     [
-        (StandardType(""), True),
-        (TypeInterface(), False),
+        (OptimizableType([0]), True),
+        (Type(), False),
     ],
 )
 def test_is_connectable(obj, correct):
-    assert StandardType("123").is_connectable(obj) == correct
+    assert OptimizableType([1, 2, 3]).is_connectable(obj) == correct
 
 
 @pytest.mark.core
@@ -45,7 +46,7 @@ def test_is_connectable(obj, correct):
     ],
 )
 def test_create(value0, value1, same):
-    t = StandardType(value0)
+    t = OptimizableType(value0)
     assert t.is_same(value1) == same
 
 
