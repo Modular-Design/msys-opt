@@ -1,8 +1,9 @@
 from .optimizable import OptimizableInterface
 from msys.core import Type
 
+
 class OptimizableType(Type, OptimizableInterface):
-    def __init__(self, default_value, generator = None):
+    def __init__(self, default_value, generator=None):
         self.optimized = False
         self.generator = generator
         super().__init__(default_value)
