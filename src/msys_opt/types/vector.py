@@ -19,3 +19,14 @@ class VectorType(OptimizableType):
         elif isinstance(value, int) or isinstance(value, float):
             return super().set_value(np.array([value]))
         return False
+
+    def to_dict(self) -> dict:
+        res = super().to_dict()
+        res["value"] = self.value.tolist()
+        return res
+
+    def from_dict(self, json: dict) -> bool:
+        super().from_dict(json)
+        if "value" in json.keys():
+            self.value = np.array(json["value"])
+        return True
