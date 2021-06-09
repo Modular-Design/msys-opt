@@ -11,16 +11,16 @@ class Math(Module):
         self.__opt_expr = Option(id="eval",
                                  title="Evaluate:",
                                  description="""
-                                        Enter mathematical Expression!
-                                        The input value can be accessed by using the according input name.
+Enter mathematical Expression!
+The input value can be accessed by using the according input name.
                                         """,
                                  default_value="in0+in1")
 
         self.__opt_ins = Option(id="length",
                                 title="Inputs:",
                                 description="""
-                                        Enter the number of inputs.
-                                        Minimum: 0
+Enter the number of inputs.
+Minimum: 0
                                         """,
                                 default_value="2")
 
